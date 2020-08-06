@@ -1,5 +1,5 @@
 #! /bin/bash
-FP_PARA=/opt/ml/input/data/cfg/serv-args.json
+FP_PARA=/opt/ml/input/data/cfg/predict-args.json
 weight=$(cat $FP_PARA | jq -r '.FP_WEIGHT')
 img=$(cat $FP_PARA | jq -r '.FP_SOURCE')
 conf=$(cat $FP_PARA | jq -r '.CONF')
