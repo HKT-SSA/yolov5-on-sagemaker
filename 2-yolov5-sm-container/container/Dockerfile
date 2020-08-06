@@ -24,4 +24,4 @@ WORKDIR /opt/code
 COPY changehostname.c /opt/code
 COPY start_with_right_hostname.sh /usr/local/bin/start_with_right_hostname.sh
 COPY train /opt/code
-COPY serve /opt/code
+COPY predict /opt/code
