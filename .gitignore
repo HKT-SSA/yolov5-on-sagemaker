@@ -1,5 +1,9 @@
+2-yolov5-sm-container/runs/
+model.tar.gz
 yolov5
 *.onnx
 *.pt
 *.gz
 *.pth
+.ipynb_checkpoints
+coco128
