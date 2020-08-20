@@ -1,0 +1,6 @@
+{
+   "FP_SOURCE": <<where>>,
+   "FP_WEIGHT": <<where>>,
+   "CONF": "0.4",
+   "FP_OUTPUT": "/opt/ml/input/data/images/inference/"
+}

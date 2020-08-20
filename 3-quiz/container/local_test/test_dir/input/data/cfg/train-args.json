@@ -1,0 +1,8 @@
+{
+   "FP_DATA": <<<where>>,
+   "FP_YOLO": <<<where>>,
+   "FP_WEIGHT": <<<where>>,
+   "IMG_SIZE": "640",
+   "EPOCHS": "5",
+   "BATCH": "16"
+}
