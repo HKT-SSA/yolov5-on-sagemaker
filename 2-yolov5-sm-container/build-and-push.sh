@@ -18,7 +18,7 @@ fi
 
 $(aws ecr get-login --region ${region} --no-include-email)
 $(aws ecr get-login --registry-ids 763104351884 --region ${region} --no-include-email)
-base_img='763104351884.dkr.ecr.'$region'.amazonaws.com/pytorch-training:1.5.1-gpu-py36-cu101-ubuntu16.04'
+base_img='763104351884.dkr.ecr.'$region'.amazonaws.com/pytorch-training:1.6.0-gpu-py36-cu101-ubuntu16.04'
 echo 'base_img:'$base_img
 
 cd container
