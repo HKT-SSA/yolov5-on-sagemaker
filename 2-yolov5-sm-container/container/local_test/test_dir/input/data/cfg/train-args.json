@@ -3,6 +3,7 @@
    "FP_YOLO": "/opt/ml/input/data/cfg/yolov5s.yaml",
    "FP_HYP": "/opt/ml/input/data/cfg/hyp.finetune.yaml",    
    "FP_WEIGHT": "/opt/ml/input/data/weights/yolov5s.pt",
+   "NAME": "tutorial",
    "IMG_SIZE": "640",
    "EPOCHS": "5",
    "BATCH": "16"

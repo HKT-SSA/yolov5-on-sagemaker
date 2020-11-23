@@ -7,9 +7,10 @@ hyp=$(cat $FP_PARA | jq -r '.FP_HYP')
 img=$(cat $FP_PARA | jq -r '.IMG_SIZE')
 batch=$(cat $FP_PARA | jq -r '.BATCH')
 epochs=$(cat $FP_PARA | jq -r '.EPOCHS')
+name=$(cat $FP_PARA | jq -r '.NAME')
 echo $data
 echo $yolo
 echo $weight
 python /opt/yolov5/train.py --img $img --batch $batch --hyp $hyp --epochs $epochs --data $data \
---cfg $yolo --weights $weight
-cp -r /opt/code/runs /opt/ml/model/
+--cfg $yolo --weights $weight --name $name
+cp -r /opt/code/runs/train/$name /opt/ml/model/

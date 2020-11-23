@@ -11,7 +11,7 @@ RUN apt-get update \
 ## fix /usr/local/cuda-10.0/compat/libcuda.so
 ## RUN bash -c 'echo "/usr/local/cuda-10.0/compat" > /etc/ld.so.conf.d/cuda.conf'
 RUN ldconfig -v
-
+RUN pip install tensorboard torch torchvision --upgrade
 
 RUN cd opt && git clone https://github.com/ultralytics/yolov5
 RUN pip install -r /opt/yolov5/requirements.txt
